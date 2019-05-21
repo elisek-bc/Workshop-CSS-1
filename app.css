@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css?family=Pinyon+Script|Source+Sans+Pro&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.opacity-bg {
+  width: 100%;
+  height: 100vh;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  opacity: 0.5;
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100vh;
+  background-image: url("./assets/img/Toast-eggs.png");
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  top: 0;
+}
+
+.discover {
+  width: 920px;
+  height: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu-container {
+  position: absolute;
+  top: 0;
+}
+
+.text-content {
+  height: 270px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-left: 30px;
+}
+
+.line {
+  width: 24px;
+  height: 3px;
+  background-color: gold;
+}
+
+.section-title {
+  font-family: 'Pinyon Script';
+  color: gold;
+  font-size: 40px;
+}
+
+.section-subtitle {
+  font-family: 'Source Sans Pro';
+  font-size: 30px;
+  color: #030303;
+}
+
+p {
+  font-size: 16px;
+}

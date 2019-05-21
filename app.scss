@@ -1,0 +1,69 @@
+@import './assets/css/layout/header.scss';
+@import './assets/css/variables/color.scss';
+@import './assets/css/variables/fonts.scss';
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.opacity-bg {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    opacity: 0.5;
+}
+
+.hero-bg {
+    width: 100%;
+    height: 100vh;
+    background-image: url("./assets/img/Toast-eggs.png");
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    top: 0;
+}
+
+.discover {
+    width: 920px;
+    height: 600px;
+    display: flex;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.menu-container {
+    position: absolute;
+    top: 0;
+}
+
+.text-content {
+    height: 270px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 30px;
+}
+
+.line {
+    width: 24px;
+    height: 3px;
+    background-color: gold;
+}
+
+.section-title {
+    font-family: 'Pinyon Script';
+    color: gold;
+    font-size: 40px;
+}
+
+.section-subtitle {
+    font-family: 'Source Sans Pro';
+    font-size: 30px;
+    color: #030303;
+}
+
+p {
+    font-size: 16px;
+}
