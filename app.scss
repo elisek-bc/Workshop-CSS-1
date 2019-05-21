@@ -1,10 +1,14 @@
 @import './assets/css/layout/header.scss';
 @import './assets/css/variables/color.scss';
 @import './assets/css/variables/fonts.scss';
+//import: always link to scss files: makes the variables accessible from this file
+
 * {
     padding: 0;
     margin: 0;
 }
+
+/* every element has by default a margin and padding, we turn it off here.*/
 
 .opacity-bg {
     width: 100%;
@@ -26,9 +30,11 @@
 }
 
 .discover {
-    width: 920px;
-    height: 600px;
+    width: 920px; /* is better than width, for responsive reasons, it doesn't scale up on big screens*/
+    height: 600px; /* you have to put a width on your div to center with margin auto*/
     display: flex;
+    position: relative; /*for the items below the div*/
+    /* align items vertical centering, justify content horizontal centering*/
     margin: 0 auto;
     align-items: center;
 }
@@ -42,7 +48,7 @@
     height: 270px;
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: space-evenly; /* vertically it distributes the elements evenly */
     margin-left: 30px;
 }
 
@@ -66,4 +72,15 @@
 
 p {
     font-size: 16px;
+}
+
+.frame {
+    height: 425px;
+    width: 350px;
+    border: 1px solid $gold;
+    position: absolute;
+    top: 48px;
+    left: -52px;
+    z-index:-1; /* creates a layer below the other image*/
+
 }
