@@ -173,7 +173,7 @@
     padding-bottom: 10px;
 }
 
-.text-wrapper {
+.text-wrapper, .text-menu {
     font-family: $mainFont;
     color:#6F6F6F;
     line-height: 26px;
@@ -223,3 +223,53 @@
 
 /*------------------------------- MENU BIO ------------------------------- */
 
+.menu-bio {
+    width: 920px; /* is better than width, for responsive reasons, it doesn't scale up on big screens*/
+    height: 925px; /* you have to put a width on your div to center with margin auto*/
+    position: relative; /*for the items below the div*/
+    /* align items vertical centering, justify content horizontal centering*/
+    margin: 0 auto;
+    display:flex;
+    flex-direction: column;
+}
+
+.intro {
+    height: 200px;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.menu-bio line {
+    margin:0 auto;
+    
+}
+
+.tab-container {
+    padding-top: 70px;
+    width: 500px;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    margin: 0 auto;
+
+    font-family: $mainFont;
+    text-transform: uppercase;
+    color: $text;
+    font-weight: 600;
+    letter-spacing: 2px;
+
+}
+
+.tab-items:after {
+    content:"";
+    border-bottom: 3px solid $gold;
+    height: 3px;
+    opacity: 0;
+    display:block;
+}
+
+.tab-items:hover::after {
+    opacity: 1;
+}
