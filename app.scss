@@ -115,7 +115,7 @@
 
 }
 /*------------------------------- REST OF PAGE ------------------------------- */
-.discover {
+.discover, .tasteful {
     width: 920px; /* is better than width, for responsive reasons, it doesn't scale up on big screens*/
     height: 455px; /* you have to put a width on your div to center with margin auto*/
     display: flex;
@@ -124,6 +124,15 @@
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
+    transform: translateY(-13px)
+}
+
+.tasteful{
+    margin-top:110px;
+}
+
+.tasteful .text-content {
+    margin-left: 0px;
 }
 
 .menu-container {
@@ -177,7 +186,7 @@
     padding-top: 30px;
 }
 
-.frame {
+.frame1 {
     height: 425px;
     width: 350px;
     border: 1px solid $gold;
@@ -187,11 +196,30 @@
     z-index:-1; /* creates a layer below the other image*/
 }
 
+.frame2 {
+    height: 425px;
+    width: 350px;
+    border: 1px solid $gold;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    z-index:-1; /* creates a layer below the other image*/
+}
+
+.image-container {
+    position: relative;
+}
+
 .image-wrapper {
     overflow:hidden;
     width: 357px;
+    z-index:1;
 }
 
 .arrow {
     margin-left: 10px;
 }
+
+
+/*------------------------------- MENU BIO ------------------------------- */
+
