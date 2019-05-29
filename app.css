@@ -2,34 +2,140 @@
 * {
   padding: 0;
   margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/* every element has by default a margin and padding, we turn it off here.*/
+/*------------------------------- HEADER ------------------------------- */
+.hero {
+  z-index: -2;
 }
 
 .opacity-bg {
   width: 100%;
   height: 100vh;
-  background-color: #000;
+  background-color: #1c1c1c;
   position: absolute;
   top: 0;
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .hero-bg {
   width: 100%;
   height: 100vh;
   background-image: url("./assets/img/Toast-eggs.png");
-  background-position: center center;
+  background-position: center -400px;
   background-size: cover;
   background-attachment: fixed;
   top: 0;
 }
 
-.discover {
-  width: 920px;
-  height: 600px;
+.nav-container {
+  font-family: 'Source Sans Pro',sans-serif;
+  color: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  width: 1100px;
+  margin: auto;
+  padding-top: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo-c {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  letter-spacing: 2px;
+}
+
+.menu-content {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 615px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu-item a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: 'Source Sans Pro',sans-serif;
+  color: white;
+  font-size: 14px;
+  letter-spacing: 2px;
+}
+
+.active {
+  border: 1px solid #C89446;
+  padding: 10px;
+  border-radius: 2px;
+  -webkit-transform: translateY(-10px);
+          transform: translateY(-10px);
+}
+
+.menu-container {
+  height: 100vh;
+  position: relative;
+}
+
+.head-title {
+  position: absolute;
   margin: 0 auto;
+  text-align: center;
+  top: 200px;
+  width: 100vw;
+}
+
+.head-title h3 {
+  font-family: "Pinyon Script", cursive;
+  color: #C89446;
+  font-size: 60px;
+  font-weight: 400;
+}
+
+.head-title h1 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-size: 70px;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 11px;
+}
+
+.head-title h4 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-size: 24px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  padding-top: 10px;
+}
+
+/*------------------------------- REST OF PAGE ------------------------------- */
+.discover {
+  width: 920px;
+  /* is better than width, for responsive reasons, it doesn't scale up on big screens*/
+  height: 455px;
+  /* you have to put a width on your div to center with margin auto*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  /*for the items below the div*/
+  /* align items vertical centering, justify content horizontal centering*/
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -38,10 +144,12 @@
 .menu-container {
   position: absolute;
   top: 0;
+  width: 100vw;
 }
 
 .text-content {
-  height: 270px;
+  height: 290px;
+  width: 445px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -52,27 +160,63 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  /* vertically it distributes the elements evenly */
   margin-left: 30px;
+  width: 445px;
 }
 
 .line {
   width: 24px;
   height: 3px;
-  background-color: gold;
+  background-color: #C89446;
 }
 
 .section-title {
   font-family: 'Pinyon Script';
-  color: gold;
+  color: #C89446;
+  font-weight: normal;
   font-size: 40px;
+  padding-top: 20px;
 }
 
 .section-subtitle {
   font-family: 'Source Sans Pro';
   font-size: 30px;
-  color: #030303;
+  color: #383838;
+  letter-spacing: 2px;
+  padding-bottom: 10px;
 }
 
-p {
-  font-size: 16px;
+.text-wrapper {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #6F6F6F;
+  line-height: 26px;
 }
+
+.link, .link a, .link a:visited {
+  font-family: "Source Sans Pro", sans-serif;
+  color: #C89446;
+  text-decoration: none;
+  padding-top: 30px;
+}
+
+.frame {
+  height: 425px;
+  width: 350px;
+  border: 1px solid #C89446;
+  position: absolute;
+  top: -30px;
+  left: -30px;
+  z-index: -1;
+  /* creates a layer below the other image*/
+}
+
+.image-wrapper {
+  overflow: hidden;
+  width: 357px;
+}
+
+.arrow {
+  margin-left: 10px;
+}
+/*# sourceMappingURL=app.css.map */
